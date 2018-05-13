@@ -1,0 +1,10 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "thekthyblocks:timeblock"
+	},
+	"variants": {
+		"normal": [{}],
+		"inventory": [{}]
+	}
+}
