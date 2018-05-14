@@ -2,6 +2,9 @@ package insane.thekthyblocks;
 
 import java.io.File;
 
+import insane.thekthyblocks.items.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -20,7 +23,15 @@ public class ThekthyBlocks {
 	@SidedProxy(clientSide="insane.thekthyblocks.ClientProxy", serverSide="insane.thekthyblocks.CommonProxy")
 	public static CommonProxy proxy;
 	
-	
+	public static final CreativeTabs tabThekthy = new CreativeTabs("tabThekthy")
+	{
+
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.barryIcon);
+		}
+		
+	};
 	
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event)

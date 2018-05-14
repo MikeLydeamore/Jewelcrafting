@@ -1,7 +1,9 @@
 package insane.thekthyblocks;
 
 import insane.thekthyblocks.blocks.ModBlocks;
+import insane.thekthyblocks.items.ItemBarryIcon;
 import insane.thekthyblocks.items.ItemRadiusUpgrade;
+import insane.thekthyblocks.items.ModItems;
 import insane.thekthyblocks.tile.TileTimeBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -28,12 +30,15 @@ public class RegistryEventHandler {
 	{
 		event.getRegistry().register(new ItemBlock(ModBlocks.blockTimeBlock).setRegistryName(ModBlocks.blockTimeBlock.getRegistryName()));
 		event.getRegistry().register(new ItemRadiusUpgrade());
+		event.getRegistry().register(new ItemBarryIcon());
 	}
 	
 	@SubscribeEvent
 	public static void registerAllModels(final ModelRegistryEvent event)
 	{
 		ModBlocks.blockTimeBlock.initModel();
+		ModItems.barryIcon.initModel();
+		ModItems.radiusUpgrade.initModel();
 	}
 
 }

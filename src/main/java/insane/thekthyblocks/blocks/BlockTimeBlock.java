@@ -1,5 +1,6 @@
 package insane.thekthyblocks.blocks;
 
+import insane.thekthyblocks.ThekthyBlocks;
 import insane.thekthyblocks.items.ItemRadiusUpgrade;
 import insane.thekthyblocks.tile.TileTimeBlock;
 import net.minecraft.block.Block;
@@ -30,7 +31,7 @@ public class BlockTimeBlock extends Block implements ITileEntityProvider {
 		this.setRegistryName("timeBlock");
 		this.setHardness(2);
 		this.setSoundType(SoundType.STONE);
-		this.setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(ThekthyBlocks.tabThekthy);
 	}
 
 	@Override
@@ -55,6 +56,11 @@ public class BlockTimeBlock extends Block implements ITileEntityProvider {
 			te.incrementRadius(1);
 			te.multipliyEnergyMultiplier(1.5);
 			te.markDirty();
+			
+			if (!playerIn.isCreative())
+				heldItem.splitStack(1);
+			
+			return true;
 		}
 		return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
 	}

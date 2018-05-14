@@ -1,21 +1,18 @@
 package insane.thekthyblocks.items;
 
-import insane.thekthyblocks.ThekthyBlocks;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class ItemRadiusUpgrade extends Item {
+public class ItemBarryIcon extends Item {
 	
-	public ItemRadiusUpgrade()
+	public ItemBarryIcon()
 	{
 		super();
-		this.setUnlocalizedName("radiusUpgrade");
-		this.setRegistryName("radiusUpgrade");
-		this.setCreativeTab(ThekthyBlocks.tabThekthy);
+		this.setUnlocalizedName("barryIcon");
+		this.setRegistryName("barryIcon");
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -23,7 +20,4 @@ public class ItemRadiusUpgrade extends Item {
 	{
 		ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
 	}
-	
-	
-
 }

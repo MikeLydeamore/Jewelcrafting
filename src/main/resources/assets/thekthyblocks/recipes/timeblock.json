@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ASA",
+    "AAA"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:emerald_block"
+    },
+    "A": [
+      {
+        "item": "minecraft:diamond_block"
+      }
+    ]
+  },
+  "result": {
+    "item": "thekthyblocks:timeblock",
+    "data": 0
+  }
+}

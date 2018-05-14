@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BSB",
+    "ABA"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:emerald"
+    },
+    "A": {
+        "item": "minecraft:diamond"
+    },
+    "B": {
+    	"item": "minecraft:nether_brick"
+    }
+  },
+  "result": {
+    "item": "thekthyblocks:radiusupgrade",
+    "data": 0
+  }
+}

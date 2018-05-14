@@ -10,5 +10,6 @@ public class ClientProxy extends CommonProxy {
 	{
 		ModBlocks.blockTimeBlock.initModel();
 		ModItems.radiusUpgrade.initModel();
+		ModItems.barryIcon.initModel();
 	}
 }
